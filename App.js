@@ -1,15 +1,30 @@
+/*
+  App.js
+
+  This is where the routing of the app is.
+
+*/
+
+
+//-----------------------------Imports----------------------------------
+
+
+
 import Expo from 'expo';
 import React,  {Component} from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import {StackNavigator,DrawerNavigator} from 'react-navigation';
-import * as Screens from './Screens';
-import MapScreen from './Screens/Map/MapScreen';
-import Teams from './Screens/Teams/Teams';
-import Donate from './Screens/Donate/Donate';
-import TeamCheckIn from './Screens/TeamCheckIn/TeamCheckIn';
-import About from './Screens/About';
-import Drawer from './Screens/Drawer';
-import './globals.js';
+
+
+//Import files
+import {
+  MapScreen,
+  Teams,
+  Donate,
+  TeamCheckIn,
+  About,
+  Drawer,
+} from './src'
 
 const MapScreenNavigator = StackNavigator({
   Map: { screen: MapScreen, },
